@@ -1,0 +1,439 @@
+body {
+  overflow: hidden;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+div {
+  box-sizing: border-box !important;
+}
+
+.wrapper {
+  width: 100%;
+  verflow: hidden;
+  height: auto;
+  height: 600px;
+}
+
+.y {
+  width: 100%;
+  height: 57.3%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.j {
+  width: 100%;
+  height: 43.7%;
+  position: absolute;
+  left: 0;
+  top: 56.3%;
+  -webkit-transition: left 1.8s;
+          transition: left 1.8s;
+}
+
+.distantview {
+  -webkit-animation-name: myfirst3;
+          animation-name: myfirst3;
+  -webkit-animation-duration: 80s;
+          animation-duration: 80s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.sceneryclose {
+  -webkit-animation-name: myfirst3;
+          animation-name: myfirst3;
+  -webkit-animation-duration: 200s;
+          animation-duration: 200s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.distantview .dw, .sceneryclose .dw {
+  position: relative;
+  height: 100%;
+  float: left;
+  border: none;
+  background-size: 100% 100%;
+  background-attachment: inherit;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  margin-left: -4px;
+}
+
+.distv1 {
+  background-image: url(../images/Christmas-far-1.png);
+}
+
+.distv2 {
+  background-image: url(../images/Christmas-far-2.png);
+}
+
+.distv3 {
+  background-image: url(../images/Christmas-far-3.png);
+}
+
+.scen1 {
+  background-image: url(../images/Christmas-middle-1.png);
+}
+
+.scen2 {
+  background-image: url(../images/Christmas-middle-2.png);
+}
+
+.scen3 {
+  background-image: url(../images/Christmas-middle-3.png);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.snowman {
+  background-image: url(../images/Christmas-snowman.png);
+  background-repeat: no-repeat;
+  width: 355px;
+  height: 506px;
+  margin-top: -318px;
+  margin-left: 668px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all 10.8;
+          transition: all 10.8;
+}
+
+.act {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transition: all 10.8s;
+          transition: all 10.8s;
+}
+
+.house {
+  background-image: url(../images/Christmas-house.png);
+  background-repeat: no-repeat;
+  width: 518px;
+  height: 364px;
+  margin-top: -289px;
+  margin-left: 468px;
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transition: all 10.8s;
+          transition: all 10.8s;
+}
+
+.deer {
+  background-image: url(../images/Christmas-deer.png);
+  background-repeat: no-repeat;
+  width: 327px;
+  height: 514px;
+  margin-top: -299px;
+  margin-left: 568px;
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transition: all 10.8s;
+          transition: all 10.8s;
+}
+
+.arrow {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  border: 1px solid #000;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: fixed;
+  top: 45%;
+  z-index: 2000000;
+  background-color: black;
+  color: white;
+  font-size: 60px;
+  line-height: 60px;
+  padding-left: 41px;
+  padding-top: 32px;
+  cursor: pointer;
+}
+
+.leftarrow {
+  left: 50px;
+}
+
+.leftarrow:hover {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transition: all .8s;
+          transition: all .8s;
+}
+
+.scalone {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  webkit-transition: all .8s;
+  -webkit-transition: all .8s;
+          transition: all .8s;
+}
+
+.wazi {
+  background-image: url(../images/Christmas-socks.png);
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  position: absolute;
+  top: -200px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background-repeat: no-repeat;
+  -webkit-transition: all .8s;
+          transition: all .8s;
+}
+
+.wazicome {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transition: opacity .8s;
+          transition: opacity .8s;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-name: socks;
+          animation-name: socks;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.wrapperout {
+  opacity: .8;
+  filter: alpha(opacity=0.8);
+  -webkit-transition: all .8s;
+          transition: all .8s;
+}
+
+.rightarrow {
+  right: 10px;
+}
+
+.rightarrow:hover {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transition: all .8s;
+          transition: all .8s;
+}
+
+.warziwarapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: transparent;
+  z-index: -1;
+  display: none;
+}
+
+.wrazshow {
+  background: rgba(2, 14, 51, 0.9);
+  z-index: 2000000 !important;
+  -webkit-transition: all .8s;
+          transition: all .8s;
+}
+
+.wenzi {
+  background-image: url(../images/wish.png);
+  width: 1263px;
+  height: 119px;
+  background-size: 100% 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: 450px;
+  background-repeat: no-repeat;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+
+.wenzicome {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transition: opacity 2s;
+          transition: opacity 2s;
+}
+
+.wenzi2 {
+  background-image: url(../images/betrue.png);
+  width: 1263px;
+  height: 119px;
+  background-size: 100% 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: 450px;
+  background-repeat: no-repeat;
+  -webkit-transition: all .8s;
+          transition: all .8s;
+}
+
+.wenzi2come {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transition: all .8s;
+          transition: all .8s;
+}
+
+.merrychristmas {
+  background-image: url(../images/Christmas.png);
+  width: 1390px;
+  height: 167px;
+  background-size: 100% 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: 450px;
+  background-repeat: no-repeat;
+  -webkit-transition: all .8s;
+          transition: all .8s;
+}
+
+.mcome {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transition: all 2.8s;
+          transition: all 2.8s;
+}
+
+.tatatuzi {
+  background-image: url(../images/TATATUZI.png);
+  width: 264px;
+  height: 277px;
+  background-size: 100% 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: absolute;
+  top: 200px;
+  background-repeat: no-repeat;
+  -webkit-transition: all .8s;
+          transition: all .8s;
+}
+
+.tatacome {
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transition: all 2.8s;
+          transition: all 2.8s;
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.wrapperfadeout {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all .8s;
+          transition: all .8s;
+}
+
+@-webkit-keyframes socks {
+  0% {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+            animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+  }
+  40% {
+    transform: translate3d(0, 500px, 0);
+    -webkit-transform: translate3d(0, 500px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+            animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+  }
+  50% {
+    transform: translate3d(0, 100px, 0);
+    -webkit-transform: translate3d(0, 100px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+            animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+  }
+  80% {
+    transform: translate3d(0, 400px, 0);
+    -webkit-transform: translate3d(0, 400px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+            animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+  }
+  90% {
+    transform: translate3d(0, 200px, 0);
+    -webkit-transform: translate3d(0, 200px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+            animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+  }
+  100% {
+    transform: translate3d(0, 300px, 0);
+    -webkit-transform: translate3d(0, 300px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+            animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+  }
+}
+
+@keyframes socks {
+  0% {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+            animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+  }
+  40% {
+    transform: translate3d(0, 500px, 0);
+    -webkit-transform: translate3d(0, 500px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+            animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+  }
+  50% {
+    transform: translate3d(0, 100px, 0);
+    -webkit-transform: translate3d(0, 100px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+            animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+  }
+  80% {
+    transform: translate3d(0, 400px, 0);
+    -webkit-transform: translate3d(0, 400px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+            animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+  }
+  90% {
+    transform: translate3d(0, 200px, 0);
+    -webkit-transform: translate3d(0, 200px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+            animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+  }
+  100% {
+    transform: translate3d(0, 300px, 0);
+    -webkit-transform: translate3d(0, 300px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+            animation-timing-function: cubic-bezier(0.89, 0.04, 0.99, 0.48);
+  }
+}
